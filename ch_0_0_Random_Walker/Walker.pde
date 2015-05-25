@@ -16,6 +16,8 @@ class Walker {
   }
   
   void step() {
+    
+    // 0, 1, 2, 3
     int choice = int(random(4));
     
     if  (choice == 0) {
