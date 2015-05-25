@@ -19,14 +19,22 @@ class Walker {
     
     float r = random(1);
     
-    if (r < 0.6) {
-      (x > mouseX) ? x-- : x++;
-      (y > mouseY) ? y-- : y++; 
-    } else if (r < 0.7) {
+    if (r < 0.2) {
+      if (x > mouseX) {
+        x--;
+      } else {
+        x++;
+      }
+      if (y > mouseY) {
+        y--;
+      } else {
+        y++;
+      } 
+    } else if (r < 0.4) {
       x++;
-    } else if (r < 0.8) {
+    } else if (r < 0.6) {
       x--;
-    } else if (r < 0.9) {
+    } else if (r < 0.8) {
       y++;
     } else {
       y--;
