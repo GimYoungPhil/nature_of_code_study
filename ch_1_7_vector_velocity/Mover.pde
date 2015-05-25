@@ -6,6 +6,7 @@ class Mover {
   Mover() {
     location = new PVector(random(width), random(height));
     velocity = new PVector(random(-2, 2), random(-2, 2));
+  }
   
   void update() {
     location.add(velocity);

@@ -4,14 +4,19 @@ class Mover {
   PVector velocity;
   PVector acceleration;
   
+  float topSpeed;
+  
   Mover() {
     location = new PVector(width / 2, height / 2);
     velocity = new PVector(0, 0);
     acceleration = new PVector(-0.001, 0.01);
+
+    topSpeed = 10;
   }
   
   void update() {
     velocity.add(acceleration);
+    velocity.limit(topSpeed);
     location.add(velocity);
   }
   
