@@ -11,7 +11,7 @@ class Walker {
   
   void display() {
     stroke(0);
-    point(x, y);
+    ellipse(x, y, 16, 16);
   }
   
   void step() {

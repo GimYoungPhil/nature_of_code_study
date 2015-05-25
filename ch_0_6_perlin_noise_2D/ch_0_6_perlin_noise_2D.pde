@@ -12,7 +12,6 @@ void setup() {
     
     for (int y = 0; y < height; y++ ) {
     
-//      float bright = random(255);
       float bright = map(noise(xoff, yoff), 0, 1, 0, 255);
       pixels[x + y * width] = color(bright);
       
